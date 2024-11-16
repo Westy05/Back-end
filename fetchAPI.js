@@ -1,3 +1,4 @@
+//We are no longer using this, and using python for everything
 const axios = require('axios');
 const fs = require('fs');
 
@@ -5,8 +6,7 @@ const API_KEY = '62a4b058a96d71.91558808';
 const API_URL = `https://eodhd.com/api/news?offset=0&limit=10&fmt=json`;
 
 const params = {
-    s: 'APPL.US',
-	api_token: API_KEY,
+    s: 'APPL.US', api_token: API_KEY,
 };
 
 
@@ -20,7 +20,7 @@ async function callAPI() {
         
     } catch (error) {
         console.error('Error fetching data:', error.message);
-    }   
+    }
 }
 
 callAPI();
