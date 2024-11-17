@@ -5,7 +5,7 @@ from botocore.exceptions import ClientError, ParamValidationError
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv("bedrock/.env")
 
 app = Flask(__name__)
 
