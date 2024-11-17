@@ -1,3 +1,4 @@
 venv/
 financialNews.json
 bedrock/.env
+.env
