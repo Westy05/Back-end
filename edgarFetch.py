@@ -6,6 +6,8 @@ import tempfile
 import time
 import os
 
+#the access keys are not being made public to github lol
+
 def s3(ticker, data):
     s3_bucket_name = "investifyhackathon"
     aws_access_key = os.getenv('AWS_ACCESS_KEY_ID')
