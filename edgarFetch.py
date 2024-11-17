@@ -5,8 +5,12 @@ import boto3
 import tempfile
 import time
 import os
+from dotenv import load_dotenv
+
 
 #the access keys are not being made public to github lol
+
+load_dotenv("bedrock/.env")
 
 def s3(ticker, data):
     s3_bucket_name = "investifyhackathon"
@@ -15,7 +19,7 @@ def s3(ticker, data):
     aws_region = "us-west-2"
 
     s3_client = boto3.client(
-        's3',
+        service_name='s3',
         aws_access_key_id=aws_access_key,
         aws_secret_access_key=aws_secret_key,
         region_name=aws_region
